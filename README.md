@@ -1,4 +1,5 @@
 1. About the solver
+
 This is the source codes for modeling a linear layer consisting of a matrix, and finding BDP for LED, MISTY1, CLEFIA, CAMELLIA and AES.
 It is written with python3. 
 When you run the codes, you will first get the STP input files *.cvc, then you need to run these CVC files in an STP solver.
@@ -8,12 +9,14 @@ STP solver, as other SMT solver, requires a SAT solver as its fundamental solver
 Minisat is the default SAT solver for STP.
 However, we strongly recommend installing cryptominisat and call the cryptominisat solver when you run STP solver.
 
-2. The structure of the source codes and their functions. 
+2. The structure of the source codes and their functions
+
 The files marked by * are all independent, so you do not need to worry about the dependencies among them.
 Below the comments line "file for modeling BDP for ciphers", there are 7 directories.
 We list the structure of "AES_4_keydependent" in one directory, and it is similar for the other 6 directories.
 ----------------------------------------------------------
 |---- Submission_ToSC
+
     # file for modeling matrix
     *|---- Matrix_if_then_else.py
     *|---- Matrix.py
