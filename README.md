@@ -4,7 +4,7 @@
 
 This is the source codes for modeling a linear layer consisting of a matrix, and finding BDP for LED, MISTY1, CLEFIA, CAMELLIA and AES.
 It is written with python3. 
-When you run the codes, you will first get the STP input files *.cvc, then you need to run these CVC files in an STP solver.
+When you run the codes, you will first get the STP input files \*.cvc, then you need to run these CVC files in an STP solver.
 Therefore, you need to install the STP solver in advance. 
 The STP solver is available at https://stp.github.io. 
 STP solver, as other SMT solver, requires a SAT solver as its fundamental solver. 
@@ -15,7 +15,7 @@ However, we strongly recommend installing cryptominisat and call the cryptominis
 
 The files marked by * are all independent, so you do not need to worry about the dependencies among them.
 Below the comments line "file for modeling BDP for ciphers", there are 7 directories.
-We list the structure of "AES_4_keydependent" in one directory, and it is similar for the other 6 directories.
+We list the structure of AES_4_keydependent in one directory, and it is similar for the other 6 directories.
 ----------------------------------------------------------
 |---- Submission_ToSC
 
@@ -70,12 +70,13 @@ We list the structure of "AES_4_keydependent" in one directory, and it is simila
     The output is our cvc file, you can use the redirection command to save it.
 
     $ python3 AES_4_round_keydependent.py > AES_4.cvc
+
     When the cvc file gotten, you can run it in your computer,
     _____________________________________
     $ stp AES_4.py 
     _____________________________________
 
-    The default solver minisat is used to solve the fundamental SAT problems.
+    The default solver minisat is used to solve the foundamental SAT problems.
     If you have installed the cryptominisat, you can also manually call cryptominisat:
     _____________________________________
     $ stp AES_4.py --cryptominisat --threads n
@@ -85,8 +86,11 @@ We list the structure of "AES_4_keydependent" in one directory, and it is simila
     For our experiments, we recommend n at least 4.
     
     After running it, you may get two kinds of result returned.
+
     1. Valid. 
+
     2. Invalid.
+
     CVC file ended with a statement "QUERY FALSE" is asking a question to the solver 
     "No solutions to the constraints I list in the CVC file, right?" 
     "Valid." means there is no solution for the model.
@@ -94,6 +98,7 @@ We list the structure of "AES_4_keydependent" in one directory, and it is simila
     As is well known in division property, no solution is a good news that we find some balanced bits. 
 
 * AES_5_round_keydepent:
+
     similar with AES_4_round_keydependent
     -------------------------------------------------
     $ python3 AES_5_round_keydependent.py > AES_5.cvc  
