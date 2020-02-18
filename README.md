@@ -1,3 +1,5 @@
+### The code for the paper "Finding Bit-Based Division Property for Ciphers with Complex Linear Layers" which is accepted by the ToSC 2020 Issue 1.
+(You could  **change the language**  of this website through the button in the  **bottle-right corner**  of this web page.)
 1. About the solver
 
 This is the source codes for modeling a linear layer consisting of a matrix, and finding BDP for LED, MISTY1, CLEFIA, CAMELLIA and AES.
