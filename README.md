@@ -16,9 +16,9 @@ However, we strongly recommend installing cryptominisat and call the cryptominis
 ## The structure of the source codes and their functions
 -------------------------
 The files marked by * are all independent, so you do not need to worry about the dependencies among them.
-* BDP_ComplexLinearLayer
-    * Matrix_if_then_else.py
-    * Matrix.py
+> BDP_ComplexLinearLayer
+    >> Matrix_if_then_else.py
+    >> Matrix.py
 
     * AES_4_keydependent
         * AES_4_round_keydependent.py
