@@ -35,7 +35,6 @@ The files marked by * are all independent, so you do not need to worry about the
 >>> Term.py<br>
 >>> test.py<br>
 >>> Vector.py<br>
-
 > AES_5_keydependent/ <br>
 > CAMELLIA/ <br>
 > CLEFIA/ <br>
@@ -44,21 +43,28 @@ The files marked by * are all independent, so you do not need to worry about the
 > Misty1_6_round_62_active/ <br>
 > Misty1_6_round_63_active/ <br>
 > README.md <br>
+
 Note we expand the director of "AES_4_keydependent" to show the details of a directory. It is the same for other directories.
 
+## The usage of the codes
+------------------------------
 
-###Matrix_if_then_else.py and Matrix.py:
-    There are two kinds of implementation of our model. 
-    Matrix_if_then_else.py follows the principle introduced in Sect. 4.1.,
-    while Matrix.py follows Theorem 2.
-    For MISTY1 and CAMELLIA, only Matrix_if_then_else.py is executed, because there are many matrices used in the main function.
+### Matrix_if_then_else.py and Matrix.py:
+------------------------------
+    There are two kinds of implementation of our model: <br> 
+    * Matrix_if_then_else.py: follows the principle introduced in Sect. 4.1.<br>
+    * Matrix.py: follows Theorem 2.<br>
+    For MISTY1 and CAMELLIA, only Matrix_if_then_else.py is executed, because there are many matrices used in the main function.<br>
     For other ciphers, Matrix.py and Matrix_if_then_else.py are all executed.
 
-###AES_4_keydependent:  
+### AES_4_keydependent:  
+------------------------------
     This code is to verify the 4-round key-dependent distinguisher for AES introduced in Section 5.1.
     AES_4_round_keydependent.py is the main function. The command to run it is:
     ($ is the prompt of bash)
+```Bash
     $ python3 AES_4_round_keydependent.py 
+```
     The output is our cvc file, you can use the redirection command to save it.
     $ python3 AES_4_round_keydependent.py > AES_4.cvc
     When the cvc file gotten, you can run it in your computer,
