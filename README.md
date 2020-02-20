@@ -19,23 +19,23 @@ The files marked by * are all independent, so you do not need to worry about the
 > BDP_ComplexLinearLayer
 >> Matrix_if_then_else.py<br>
 >> Matrix.py
+> AES_4_keydependent
+>> AES_4_round_keydependent.py<br>
+>> AES.py<br>
+>> AssertSbox.py<br>
+>> constant.py<br>
+>> Matrix_non_square.py<br>
+>> Matrix.py<br>
+>> BOOLFUNC
+>>> GenInt.py<br>
+>>> __init__.py<br>
+>>> Polynomial.py<br>
+>>> README.md<br>
+>>> Sbox.py<br>
+>>> Term.py<br>
+>>> test.py<br>
+>>> Vector.py<br>
 
-    * AES_4_keydependent
-        * AES_4_round_keydependent.py
-        * AES.py
-        * AssertSbox.py
-        * constant.py
-        * Matrix_non_square.py
-        * Matrix.py
-        * BOOLFUNC
-            * GenInt.py
-            * __init__.py
-            * Polynomial.py
-            * README.md
-            * Sbox.py
-            * Term.py
-            * test.py
-            * Vector.py
     * AES_5_keydependent/
     * CAMELLIA/
     * CLEFIA/
