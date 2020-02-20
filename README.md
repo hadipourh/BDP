@@ -15,7 +15,7 @@ However, we strongly recommend installing cryptominisat and call the cryptominis
 
 ## The structure of the source codes and their functions
 -------------------------
-The files marked by * are all independent, so you do not need to worry about the dependencies among them.
+The files for different ciphers are all independent, so you do not need to worry about the dependencies among them.
 > BDP_ComplexLinearLayer/
 >> Matrix_if_then_else.py<br>
 >> Matrix.py<br>
