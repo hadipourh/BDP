@@ -18,7 +18,7 @@ However, we strongly recommend installing cryptominisat and call the cryptominis
 The files marked by * are all independent, so you do not need to worry about the dependencies among them.
 > BDP_ComplexLinearLayer
 >> Matrix_if_then_else.py<br>
->> Matrix.py
+>> Matrix.py<br>
 > AES_4_keydependent
 >> AES_4_round_keydependent.py<br>
 >> AES.py<br>
@@ -26,7 +26,7 @@ The files marked by * are all independent, so you do not need to worry about the
 >> constant.py<br>
 >> Matrix_non_square.py<br>
 >> Matrix.py<br>
->> BOOLFUNC
+>> BOOLFUNC<br>
 >>> GenInt.py<br>
 >>> __init__.py<br>
 >>> Polynomial.py<br>
