@@ -49,8 +49,7 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
 ## The usage of the codes
 ------------------------------
 
-### Matrix_if_then_else.py and Matrix.py:
-------------------------------
+* Matrix_if_then_else.py and Matrix.py:
     There are two kinds of implementation of our model: <br> 
     * Matrix_if_then_else.py: follows the principle introduced in Sect. 4.1.<br>
     * Matrix.py: follows Theorem 2.<br>
