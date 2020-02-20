@@ -50,13 +50,12 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
 ------------------------------
 
 ## Matrix_if_then_else.py and Matrix.py: <br>
-    There are two kinds of implementation of our model: <br> 
-    * Matrix_if_then_else.py: follows the principle introduced in Sect. 4.1.<br>
-    * Matrix.py: follows Theorem 2.<br>
+    There are two kinds of implementation of our model: 
+    * Matrix_if_then_else.py: follows the principle introduced in Sect. 4.1.
+    * Matrix.py: follows Theorem 2.
     For MISTY1 and CAMELLIA, only Matrix_if_then_else.py is executed, because there are many matrices used in the main function. For other ciphers, Matrix.py and Matrix_if_then_else.py are all executed.
 
-### AES_4_keydependent:  
-------------------------------
+## AES_4_keydependent: <br> 
     This code is to verify the 4-round key-dependent distinguisher for AES introduced in Section 5.1.
     AES_4_round_keydependent.py is the main function. The command to run it is:
     ($ is the prompt of bash)
@@ -64,17 +63,23 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
     $ python3 AES_4_round_keydependent.py 
 ```
     The output is our cvc file, you can use the redirection command to save it.
+```Bash
     $ python3 AES_4_round_keydependent.py > AES_4.cvc
+```
     When the cvc file gotten, you can run it in your computer,
+```Bash
     $ stp AES_4.py 
+```
     The default solver minisat is used to solve the foundamental SAT problems.
     If you have installed the cryptominisat, you can also manually call cryptominisat:
+```Bash
     $ stp AES_4.py --cryptominisat --threads n
+```
     Cryptominisat supports parallel, so you can use --threads n to decide how many threads you need to solve your problem.
     For our experiments, we recommend n at least 4.
     After running it, you may get two kinds of result returned.
-    1. Valid. 
-    2. Invalid.
+    * Valid. 
+    * Invalid.
     CVC file ended with a statement "QUERY FALSE" asking a question to the solver 
     "No solutions to the constraints I list in the CVC file, right?" 
     "Valid." means there is no solution for the model.
