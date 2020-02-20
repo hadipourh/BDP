@@ -49,12 +49,11 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
 ## The usage of the codes
 ------------------------------
 
-### Matrix_if_then_else.py and Matrix.py:
+## Matrix_if_then_else.py and Matrix.py: <br>
     There are two kinds of implementation of our model: <br> 
     * Matrix_if_then_else.py: follows the principle introduced in Sect. 4.1.<br>
     * Matrix.py: follows Theorem 2.<br>
-    For MISTY1 and CAMELLIA, only Matrix_if_then_else.py is executed, because there are many matrices used in the main function. <br>
-    For other ciphers, Matrix.py and Matrix_if_then_else.py are all executed.
+    For MISTY1 and CAMELLIA, only Matrix_if_then_else.py is executed, because there are many matrices used in the main function. For other ciphers, Matrix.py and Matrix_if_then_else.py are all executed.
 
 ### AES_4_keydependent:  
 ------------------------------
