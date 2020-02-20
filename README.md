@@ -86,30 +86,44 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
     "Invalid." means there is at least one solution for the model.
     As is well known in division property, no solution is a good news that we find some balanced bits. 
 
-###AES_5_round_keydepent:
+## AES_5_round_keydepent: <br>
     similar with AES_4_round_keydependent
+'''Bash
     $ python3 AES_5_round_keydependent.py > AES_5.cvc  
     $ stp AES_5.cvc (--cryptominisat --threads 4)
-###CAMELLIA
+'''
+## CAMELLIA
     In the Camellia_base.py, we list the model of camellia.
     In Camellia.py, you can change the inVec to decide which bits should be active and how many rounds you want to check.  
+```
     $ python3 Camellia.py > camellia.cvc
     $ stp camellia.cvc (--cryptominisat --threads 4)
-###CLEFIA
+```
+## CLEFIA
+```Bash
     $ python3 CLEFIA.py > CLEIFA.cvc
     $ stp CLEFIA.cvc (--cryptominisat --threads 4)
-###LED_6r
+```
+## LED_6r
+```Bash
     $ python3 led.py > led.cvc
     $ stp led.cvc (--cryptominisat --threads 4)
-###LED_7r
+```
+## LED_7r
+```Bash
     $ python3 led.py > led.cvc
     $ stp led.cvc (--cryptominisat --threads 4)
-###Misty1_6_round_62_active
+```
+## Misty1_6_round_62_active
+```Bash
     $ python3 Misty1.py > Misty1_62.cvc
     $ stp Misty1_62.py (--cryptominisat --threads 4)
-###Misty1_6_round_63_active
+```
+## Misty1_6_round_63_active
+```Bash
     $ python3 Misty1.py > Misty1_63.cvc
     $ stp Misty1_63.py (--cryptominisat --threads 4)
+```
 
 
 
