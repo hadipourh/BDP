@@ -95,7 +95,7 @@ Note we expand the director of "AES_4_keydependent" to show the details of a dir
 ## CAMELLIA
     In the Camellia_base.py, we list the model of camellia.
     In Camellia.py, you can change the inVec to decide which bits should be active and how many rounds you want to check.  
-```
+```Bash
     $ python3 Camellia.py > camellia.cvc
     $ stp camellia.cvc (--cryptominisat --threads 4)
 ```
