@@ -16,17 +16,17 @@ However, we strongly recommend installing cryptominisat and call the cryptominis
 ## The structure of the source codes and their functions
 -------------------------
 The files marked by * are all independent, so you do not need to worry about the dependencies among them.
-> BDP_ComplexLinearLayer
+> BDP_ComplexLinearLayer/
 >> Matrix_if_then_else.py<br>
 >> Matrix.py<br>
-> AES_4_keydependent
+> AES_4_keydependent/
 >> AES_4_round_keydependent.py<br>
 >> AES.py<br>
 >> AssertSbox.py<br>
 >> constant.py<br>
 >> Matrix_non_square.py<br>
 >> Matrix.py<br>
->> BOOLFUNC<br>
+>> BOOLFUNC/<br>
 >>> GenInt.py<br>
 >>> __init__.py<br>
 >>> Polynomial.py<br>
@@ -36,14 +36,14 @@ The files marked by * are all independent, so you do not need to worry about the
 >>> test.py<br>
 >>> Vector.py<br>
 
-    * AES_5_keydependent/
-    * CAMELLIA/
-    * CLEFIA/
-    * LED_6r/
-    * LED_7r/
-    * Misty1_6_round_62_active/
-    * Misty1_6_round_63_active/
-    * README.md
+> AES_5_keydependent/ <br>
+> CAMELLIA/ <br>
+> CLEFIA/ <br>
+> LED_6r/ <br>
+> LED_7r/ <br>
+> Misty1_6_round_62_active/ <br>
+> Misty1_6_round_63_active/ <br>
+> README.md <br>
 Note we expand the director of "AES_4_keydependent" to show the details of a directory. It is the same for other directories.
 
 
